@@ -4,31 +4,30 @@ body {
 }
 
 .main_container{
-    display: inline-grid;
-    grid-column: 1;
-    grid-row: 4;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:repeat(12);
     gap: 10px;
     
    
 }
 
 .item1{
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row: 1 / 2;
     border: 1px solid black;
     gap: 10px;
 }
 
 .item2{
-    grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row: 2 / 5;
     border: 1px solid black;
     gap: 5px;
+    display: flexbox;
+    align-items: center;
 }
 
 .item3{
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row: 6 / 12;
     border: 1px solid black;
     gap: 5px;
 }
@@ -63,7 +62,7 @@ body {
         border: 2px solid black;
         padding: 5px}
     
- .item {
+ .item2 {
     border: 1px solid black;
      background-image:  linear-gradient(145deg, blue, gray);
      }
@@ -91,8 +90,9 @@ body {
     button {
       width: 30%;
       margin-left: 550px;
+      margin-bottom: 15px;
     }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 421px){
 
 .Promos{
 
@@ -107,7 +107,12 @@ border: 1px solid black;
 width: 100%;
 height: 100%;
 }
+
+
+    
+
 }
+
 
 @media screen and (max-width: 420px){
 
@@ -129,4 +134,47 @@ width: 100%;
 height: 100%;
 
 }
+
+.item2 {
+    border: 1px solid black;
+     background-image:  linear-gradient(145deg, blue, gray);
+     }
+
+    .A {
+      width: 20%;
+      margin-left: 35px;
+    }
+    .B {
+      width: 20%;
+      margin-left: 35px;
+    }
+    .C {
+      width: 20%;
+      margin-left: 35px;
+    }
+    .D {
+      width: 20%;
+      margin-left: 35px;
+    }
+    
+    label {
+      margin-left: 25px;
+    }
+    button {
+      width: 10%;
+      margin-left: 35px;
+      margin-bottom: 15px;
+}
+
+.item1 {
+    display: flex;
+   justify-content: column;
+    color: aliceblue;
+}
+
+ul li a {
+    color:aliceblue;
+    border: 1px solid white;
+}
+
 }
